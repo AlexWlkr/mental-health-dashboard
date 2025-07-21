@@ -83,13 +83,6 @@ select:focus {
   font-size: 0.95rem;
 }
 
-.program-card {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  /* existing styles... */
-}
-
 .program-image {
   width: 80px;
   height: 80px;
@@ -97,14 +90,8 @@ select:focus {
   border-radius: 12px;
 }
 
-.card-content {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-
 .program-thumb {
-  width: 80px;
+  width: 100px;
   height: 80px;
   object-fit: cover;
   border-radius: 12px;
@@ -113,6 +100,13 @@ select:focus {
 
 .program-details {
   flex: 1;
+}
+
+.program-wrapper {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
 }
 
 /* ACCESSIBILITY FOCUS STYLES */
