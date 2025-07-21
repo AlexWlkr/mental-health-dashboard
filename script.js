@@ -17,7 +17,13 @@ function filterPrograms () {
       programList.innerHTML = ''; //clear the current list
 
 //filter the array of programs based on the selected filters
-programs.forEach(program => {
+  programs.forEach(program => {
+    const matchesType = selectedType === '' || program.type === selectedType;
+    const matchesAudience = selectedAudience === '' || program.audience === selectedAudience;
+    const matchesAccess = selectedAccess === '' || program.accessibility === selectedAccess;
+
+
+if (matchesType && matchesAudience && matchesAccess) {
   const wrapper = document.createElement('div');
   wrapper.classList.add('program-wrapper');
 
@@ -35,8 +41,10 @@ programs.forEach(program => {
     <p><strong>Accessibility:</strong> ${program.accessibility}</p>
   `;
 
-  wrapper.appendChild(thumbnail);
   wrapper.appendChild(card);
+  wrapper.appendChild(thumbnail);
   programList.appendChild(wrapper);
+}
 });
 }
+filterPrograms();
