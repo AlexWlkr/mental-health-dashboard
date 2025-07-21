@@ -1,11 +1,68 @@
 /* GENERAL STYLES */
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
+body {
+    font-family: 'Poppins', sans-serif;
+  background-color: #f5f6fa;
+  color: #222;
+  line-height: 1.6;
+  padding: 2rem;
+}
 
 /* PAGE TITLE */
-
+h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 2rem;
+  text-align: center;
+}
 
 /* FILTER SECTION */
-
+#filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
 
 /* PROGRAM CARDS */
+
+#program-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.program-card {
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+  padding: 24px;
+  max-width: 300px;
+  width: 100%;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.program-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.program-card h2 {
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+  color: #111;
+}
+
+.program-card p {
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}
