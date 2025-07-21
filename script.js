@@ -9,13 +9,14 @@ audienceFilter.addEventListener('change', filterPrograms);
 accessFilter.addEventListener('change', filterPrograms);
 
 //filterprogram function
-function renderFilteredPrograms () {
+function filterPrograms () {
   const selectedType = typeFilter.value;
   const selectedAudience = audienceFilter.value;
   const selectedAccess = accessFilter.value;
 
-   programList.innerHTML = ''; //clear the current list
+      programList.innerHTML = ''; //clear the current list
 
+//filter the array of programs based on the selected filters
      programs.forEach(program => {
     const matchesType = selectedType === '' || program.type === selectedType;
     const matchesAudience = selectedAudience === '' || program.audience === selectedAudience;
@@ -34,11 +35,6 @@ function renderFilteredPrograms () {
     }
   });
 }
-
-//change event lister for filers
-typeFilter.addEventListener('change', renderFilteredPrograms);
-audienceFilter.addEventListener('change', renderFilteredPrograms);
-accessFilter.addEventListener('change', renderFilteredPrograms);
 
 //add program cards to the program list
 programs.forEach(program => {
