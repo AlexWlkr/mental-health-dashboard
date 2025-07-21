@@ -83,19 +83,12 @@ select:focus {
   font-size: 0.95rem;
 }
 
-.program-image {
-  width: 80px;
-  height: 80px;
-  object-fit: cover;
-  border-radius: 12px;
-}
-
 .program-thumb {
-  width: 100px;
-  height: 80px;
+width: 300px;
+  height: 100%;
   object-fit: cover;
   border-radius: 12px;
-  flex-shrink: 0;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
 }
 
 .program-details {
@@ -104,8 +97,9 @@ select:focus {
 
 .program-wrapper {
   display: flex;
-  align-items: center;
+  align-items: stretch;
   gap: 1rem;
+   justify-content: center;
 }
 
 .program-wrapper img {
