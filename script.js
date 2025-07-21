@@ -8,6 +8,38 @@ typeFilter.addEventListener('change', filterPrograms);
 audienceFilter.addEventListener('change', filterPrograms);
 accessFilter.addEventListener('change', filterPrograms);
 
+//filterprogram function
+function renderFilteredPrograms () {
+  const selectedType = typeFilter.value;
+  const selectedAudience = audienceFilter.value;
+  const selectedAccess = accessFilter.value;
+
+   programList.innerHTML = ''; //clear the current list
+
+     programs.forEach(program => {
+    const matchesType = selectedType === '' || program.type === selectedType;
+    const matchesAudience = selectedAudience === '' || program.audience === selectedAudience;
+    const matchesAccess = selectedAccess === '' || program.accessibility === selectedAccess;
+
+    if (matchesType && matchesAudience && matchesAccess) {
+      const card = document.createElement('div');
+      card.classList.add('program-card');
+      card.innerHTML = `
+        <h2>${program.name}</h2>
+        <p><strong>Type:</strong> ${program.type}</p>
+        <p><strong>Audience:</strong> ${program.audience}</p>
+        <p><strong>Accessibility:</strong> ${program.accessibility}</p>
+      `;
+      programList.appendChild(card);
+    }
+  });
+}
+
+//change event lister for filers
+typeFilter.addEventListener('change', renderFilteredPrograms);
+audienceFilter.addEventListener('change', renderFilteredPrograms);
+accessFilter.addEventListener('change', renderFilteredPrograms);
+
 //add program cards to the program list
 programs.forEach(program => {
 const card = document.createElement('div');
