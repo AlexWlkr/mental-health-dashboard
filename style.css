@@ -82,6 +82,21 @@ select:focus {
   font-size: 0.95rem;
 }
 
+.program-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  /* existing styles... */
+}
+
+.program-image {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+
 /* ACCESSIBILITY FOCUS STYLES */
 *:focus {
   outline: 3px solid #7b61ff;
