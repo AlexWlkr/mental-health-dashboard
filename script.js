@@ -1,12 +1,15 @@
 const programList = document.getElementById('program-list');
-const firstProgram = programs[0];
+
+//add program cards to the program list
+programs.forEach(program => {
 const card = document.createElement('div');
-card.classList.add('program-card');
+  card.classList.add('program-card');
 
 card.innerHTML = `
-  <h2>${firstProgram.name}</h2>
-  <p><strong>Type:</strong> ${firstProgram.type}</p>
-  <p><strong>Audience:</strong> ${firstProgram.audience}</p>
-  <p><strong>Accessibility:</strong> ${firstProgram.accessibility}</p>
+  <h2>${program.name}</h2>
+  <p><strong>Type:</strong> ${program.type}</p>
+  <p><strong>Audience:</strong> ${program.audience}</p>
+  <p><strong>Accessibility:</strong> ${program.accessibility}</p>
 `;
 programList.appendChild(card);
+ });
