@@ -42,11 +42,15 @@ const card = document.createElement('div');
   card.classList.add('program-card');
 
 card.innerHTML = `
-  <img src="${program.image}" alt="${program.name} thumbnail" class="program-image">
-  <h2>${program.name}</h2>
-  <p><strong>Type:</strong> ${program.type}</p>
-  <p><strong>Audience:</strong> ${program.audience}</p>
-  <p><strong>Accessibility:</strong> ${program.accessibility}</p>
+  <div class="card-content">
+    <img src="${program.image}" alt="Thumbnail for ${program.name}" class="program-thumb">
+    <div class="program-details">
+      <h2>${program.name}</h2>
+      <p><strong>Type:</strong> ${program.type}</p>
+      <p><strong>Audience:</strong> ${program.audience}</p>
+      <p><strong>Accessibility:</strong> ${program.accessibility}</p>
+    </div>
+  </div>
 `;
 programList.appendChild(card);
  });

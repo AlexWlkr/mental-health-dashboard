@@ -96,6 +96,23 @@ select:focus {
   border-radius: 12px;
 }
 
+.card-content {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.program-thumb {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 12px;
+  flex-shrink: 0;
+}
+
+.program-details {
+  flex: 1;
+}
 
 /* ACCESSIBILITY FOCUS STYLES */
 *:focus {
