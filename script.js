@@ -1,4 +1,12 @@
 const programList = document.getElementById('program-list');
+const typeFilter = document.getElementById('type-filter');
+const audienceFilter = document.getElementById('audience-filter');
+const accessFilter = document.getElementById('access-filter');
+
+//event listeners to filter programs based on user selections
+typeFilter.addEventListener('change', filterPrograms);
+audienceFilter.addEventListener('change', filterPrograms);
+accessFilter.addEventListener('change', filterPrograms);
 
 //add program cards to the program list
 programs.forEach(program => {
