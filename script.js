@@ -2,7 +2,11 @@ const programList = document.getElementById('program-list');
 const typeFilter = document.getElementById('type-filter');
 const audienceFilter = document.getElementById('audience-filter');
 const accessFilter = document.getElementById('access-filter');
+const searchBar = document.getElementById('search-bar');
 
+//event listeners for searchbar to update results asuser types
+searchBar.addEventListener('input', filterPrograms);
+ 
 //event listeners to filter programs based on user selections
 typeFilter.addEventListener('change', filterPrograms);
 audienceFilter.addEventListener('change', filterPrograms);
@@ -10,11 +14,15 @@ accessFilter.addEventListener('change', filterPrograms);
 
 //filterprogram function
 function filterPrograms () {
+  const searchTerm = searchBar.value.toLowerCase();
   const selectedType = typeFilter.value;
   const selectedAudience = audienceFilter.value;
   const selectedAccess = accessFilter.value;
 
       programList.innerHTML = ''; //clear the current list
+
+      // help searchsbar check filters
+const matchesName = program.name.toLowerCase().includes(searchTerm);
 
 //filter the array of programs based on the selected filters
   programs.forEach(program => {
@@ -23,7 +31,7 @@ function filterPrograms () {
     const matchesAccess = selectedAccess === '' || program.accessibility === selectedAccess;
 
 
-if (matchesType && matchesAudience && matchesAccess) {
+if (matchesType && matchesAudience && matchesAccess && matchesName) {
   const wrapper = document.createElement('div');
   wrapper.classList.add('program-wrapper');
 
