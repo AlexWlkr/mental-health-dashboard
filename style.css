@@ -27,12 +27,12 @@ h1 {
 #filters {
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 1rem 2rem;
   justify-content: center;
   margin-bottom: 2rem;
 }
 
-select {
+#filters select {
   padding: 0.75rem 2rem 0.75rem 1.25rem; 
   font-size: 1rem;
   border-radius: 15px;
@@ -40,14 +40,17 @@ select {
   background-color: #fff;
   box-shadow: 0 4px 8px rgba(0,0,0,0.05);
   transition: border 0.2s ease;
-  appearance: auto;
+  appearance: none;
+   background-image: url('data:image/svg+xml;charset=US-ASCII,<svg xmlns="http://www.w3.org/2000/svg" width="14" height="10"><path fill="%237b61ff" d="M1 1l6 6 6-6"/></svg>');
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  background-size: 12px;
 }
 
-select:focus {
+#filters select:focus {
   outline: none;
   border: 2px solid #7b61ff;
 }
-
 /* PROGRAM CARDS */
 
 #program-list {
