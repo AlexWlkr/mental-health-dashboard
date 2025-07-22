@@ -21,15 +21,13 @@ function filterPrograms () {
 
       programList.innerHTML = ''; //clear the current list
 
-      // help searchsbar check filters
-const matchesName = program.name.toLowerCase().includes(searchTerm);
-
 //filter the array of programs based on the selected filters
   programs.forEach(program => {
     const matchesType = selectedType === '' || program.type === selectedType;
     const matchesAudience = selectedAudience === '' || program.audience === selectedAudience;
     const matchesAccess = selectedAccess === '' || program.accessibility === selectedAccess;
-
+      // help searchsbar check filters
+const matchesName = program.name.toLowerCase().includes(searchTerm);
 
 if (matchesType && matchesAudience && matchesAccess && matchesName) {
   const wrapper = document.createElement('div');
