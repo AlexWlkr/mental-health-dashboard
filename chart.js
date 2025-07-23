@@ -14,6 +14,16 @@ label: 'Number of Programs by Type',
   borderWidth: 1    
  }]
   },
+    options: {
+    scales: {
+      y: {
+        beginAtZero: true, 
+        ticks: {
+          stepSize: 1 
+        }
+      }
+    }
+  }
   });
 
 // chart 2: programs by audience
