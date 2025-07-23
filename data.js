@@ -56,9 +56,9 @@ const programs = [
     image: "https://placehold.co/600x400"
   },
   {
-    name: "InclusiveTherapists – BIPOC/LGBTQ‑affirming Therapists",
+    name: "Mighty Behavioral Health Services",
     type: "Therapy",
-    audience: "BIPOC",
+    audience: "Adults",
     accessibility: "Virtual",
     image: "https://placehold.co/600x400"
   },
@@ -70,10 +70,10 @@ const programs = [
     image: "https://placehold.co/600x400"
   },
   {
-    name: "Psychology Today – West Baltimore LGBTQ+ Therapists",
+    name: "Overcare Pyschiatry and Therapy",
     type: "Therapy",
-    audience: "LGBTQ",
-    accessibility: "Virtual",
+    audience: "Family",
+    accessibility: "In-Person",
     image: "https://placehold.co/600x400"
   },
   {
@@ -88,6 +88,13 @@ const programs = [
     type: "Peer Support",
     audience: "Family",
     accessibility: "Services Offered in Spanish",
+    image: "https://placehold.co/600x400"
+  },
+   { 
+    name: "Sarah's House",
+    type: "THERAPY",
+    audience: "Family",
+    accessibility: "Hybrid",
     image: "https://placehold.co/600x400"
   }
 ];
