@@ -23,6 +23,18 @@ h1 {
   text-align: center;
 }
 
+/* DASHBOARD*/
+#dashboard {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+/* LEFT TITLE */
+#left-panel {
+  flex: 3;
+}
+
 /* FILTER SECTION */
 #filters {
   display: flex;
@@ -125,6 +137,15 @@ width: 300px;
 
 .program-wrapper img {
   order: 2;
+}
+
+/* RIGHT PANEL*/
+#right-panel {
+  flex: 1;
+  background-color: #f7f9fc;
+  padding: 1rem;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
 }
 
 /* ACCESSIBILITY FOCUS STYLES */
