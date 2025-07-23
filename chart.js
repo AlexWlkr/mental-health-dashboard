@@ -27,34 +27,44 @@ label: 'Number of Programs by Type',
   });
 
 // chart 2: programs by audience
-const audienceCtx = document.getElementById('programAudienceChart').getContext('2d');
+const audienceCtx = document.getElementById('audienceChart').getContext('2d');
 const audienceLabels = ['Adult', 'Family', 'Youth', 'LGBTQ', 'BIPOC', 'Teens', 'Collegestudents'];
 const audienceData = [4, 5, 1, 3, 0, 1, 0];
 
-new Chart(typeCtx, {
+new Chart(audienceCtx, {
 type: 'bar',
  data: {
-labels: typeLabels, datasets: [{
+labels: audienceLabels, datasets: [{
 label: 'Number of Programs by Audience',
- data: typeData,
-  backgroundColor: '#82b1ff',
-  borderColor: '#2962ff',
+ data: audienceData,
+  backgroundColor: '#ffd180',
+      borderColor: '#ff6d00',
   borderWidth: 1    
  }]
   },
+    options: {
+    scales: {
+      y: {
+        beginAtZero: true,
+        ticks: {
+          stepSize: 1
+        }
+      }
+    }
+  }
   });
 
 // chart 3: programs by accessiblitity options
- const accessibilityCtx = document.getElementById('programAccesibilityChart').getContext('2d');
-const accessibilityLabels = ['ASL Interpretation Offered', 'Services Offered in Spanish', 'Virtual', 'In-Person', 'Hybrid', 'Service Animal Friendly', 'Wheelchair Accessible Location'];
+ const accessibilityCtx = document.getElementById('accessibilityChart').getContext('2d');
+const accessibilityLabels = ['ASL Interpretation ', 'Services in Spanish', 'Virtual', 'In-Person', 'Hybrid', 'Service Animal Friendly', 'Wheelchair Accessible Location'];
 const accessibilityData = [1, 1, 2, 4, 6, 0, 0];
 
-new Chart(typeCtx, {
+new Chart(accessibilityCtx, {
 type: 'bar',
  data: {
-labels: typeLabels, datasets: [{
+labels: accessibilityLabels, datasets: [{
 label: 'Number of Programs by Accessibility Options',
- data: typeData,
+ data: accessibilityData,
   backgroundColor: '#82b1ff',
   borderColor: '#2962ff',
   borderWidth: 1    
