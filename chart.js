@@ -15,6 +15,9 @@ label: 'Number of Programs by Type',
  }]
   },
     options: {
+           layout: {
+    padding: 10
+        },
       plugins: {
     legend: {
       display: false
@@ -48,6 +51,9 @@ label: 'Number of Programs by Audience',
  }]
   },
     options: {
+         layout: {
+    padding: 10
+        },
       plugins: {
     legend: {
       display: false
@@ -81,6 +87,9 @@ label: 'Number of Programs by Accessibility Options',
   }]
   },
       options: {
+        layout: {
+    padding: 10
+        },
       plugins: {
     legend: {
       display: false

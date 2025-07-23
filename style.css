@@ -141,14 +141,21 @@ width: 300px;
 
 /* RIGHT PANEL*/
 #right-panel {
-  flex: 1;
-  background-color: #f7f9fc;
-  padding: 1rem;
-  border-radius: 16px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
 }
 
 /* CHART STYLES*/
+
+.chart-card{
+  background-color: #ffffff;     
+  border-radius: 16px;   
+  padding: 1.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+}
 
 
 
