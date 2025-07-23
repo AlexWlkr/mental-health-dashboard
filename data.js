@@ -92,7 +92,7 @@ const programs = [
   },
    { 
     name: "Sarah's House",
-    type: "THERAPY",
+    type: "Therapy",
     audience: "Family",
     accessibility: "Hybrid",
     image: "https://placehold.co/600x400"

@@ -11,6 +11,9 @@
     <div class="instructions">
         <p>   <!-- insert page instrucitons later! --></p>
     </div>
+ <main id="dashboard">
+  <!-- LEFT PANEL -->
+  <section id="left-panel">
        <!-- FILTER SECTION -->
       <div id="filters">
 <label for="type-filter">Program Type:</label>
@@ -43,17 +46,32 @@
   <option value="Service Animal Friendly">Service Animal Friendly</option>
   <option value="Services Offered in Spanish">Services Offered in Spanish</option>
   <option value="Virtual">Virtual</option>
-  <option value="Wheelchair Accesible Location">Wheelchair Accesible Location</option>
+  <option value="Wheelchair Accessible Location">Wheelchair Accesible Location</option>
 </select>
 <!-- SEARCH BAR -->
      <label for="search-bar">Search Programs:</label>     
 <input type="text" id="search-bar" placeholder="Search by name..." />
   </div>
+
    <!-- PROGRAM CARDS -->
    <div id="program-list">
     <!-- Program cards will go here via javascript -->
   </div>
+   </section>
+   
+   <!-- RIGHT PANEL -->
+
+     <section id="right-panel">
+    <!-- add charts -->
+  </section>
+   </main>
+
+          <!-- SCRIPTS -->
+
   <script src="data.js"></script>
   <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="chart.js"></script>
+    <footer>Copyright © 2025</footer>
 </body>
 </html>
