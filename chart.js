@@ -72,7 +72,7 @@ label: 'Number of Programs by Audience',
 
 // chart 3: programs by accessiblitity options
  const accessibilityCtx = document.getElementById('accessibilityChart').getContext('2d');
-const accessibilityLabels = ['ASL Interpretation ', 'Services in Spanish', 'Virtual', 'In-Person', 'Hybrid', 'Service Animal Friendly', 'Wheelchair Accessible Location'];
+const accessibilityLabels = ['ASL ', 'Spanish', 'Virtual', 'In-Person', 'Hybrid', 'Service Animal', 'Wheelchair Access'];
 const accessibilityData = [1, 1, 2, 4, 6, 0, 0];
 
 new Chart(accessibilityCtx, {
@@ -87,6 +87,7 @@ label: 'Number of Programs by Accessibility Options',
   }]
   },
       options: {
+        indexAxis: 'y',
         layout: {
     padding: 10
         },
