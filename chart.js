@@ -9,9 +9,10 @@ type: 'bar',
 labels: typeLabels, datasets: [{
 label: 'Number of Programs by Type',
  data: typeData,
-  backgroundColor: '#82b1ff',
-  borderColor: '#2962ff',
-  borderWidth: 1    
+  backgroundColor: '#e0aaff',
+  borderColor: '#c77dff',
+  borderWidth: 1,
+  borderRadius: 2   
  }]
   },
     options: {
@@ -45,9 +46,10 @@ type: 'bar',
 labels: audienceLabels, datasets: [{
 label: 'Number of Programs by Audience',
  data: audienceData,
-  backgroundColor: '#ffd180',
-      borderColor: '#ff6d00',
-  borderWidth: 1    
+  backgroundColor: '#c77dff',
+      borderColor: '#9d4edd',
+  borderWidth: 1,
+  borderRadius: 2
  }]
   },
     options: {
@@ -81,9 +83,10 @@ type: 'bar',
 labels: accessibilityLabels, datasets: [{
 label: 'Number of Programs by Accessibility Options',
  data: accessibilityData,
-  backgroundColor: '#82b1ff',
-  borderColor: '#2962ff',
-  borderWidth: 1    
+  backgroundColor: '#9d4edd',
+  borderColor: '#7b2cbf',
+  borderWidth: 1,
+  borderRadius: 2
   }]
   },
       options: {
