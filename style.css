@@ -148,6 +148,10 @@ width: 300px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.04);
 }
 
+/* CHART STYLES*/
+
+
+
 /* ACCESSIBILITY FOCUS STYLES */
 *:focus {
   outline: 3px solid #7b61ff;

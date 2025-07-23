@@ -15,6 +15,11 @@ label: 'Number of Programs by Type',
  }]
   },
     options: {
+      plugins: {
+    legend: {
+      display: false
+    }
+  },
     scales: {
       y: {
         beginAtZero: true, 
@@ -43,6 +48,11 @@ label: 'Number of Programs by Audience',
  }]
   },
     options: {
+      plugins: {
+    legend: {
+      display: false
+    }
+  },
     scales: {
       y: {
         beginAtZero: true,
@@ -70,4 +80,19 @@ label: 'Number of Programs by Accessibility Options',
   borderWidth: 1    
   }]
   },
+      options: {
+      plugins: {
+    legend: {
+      display: false
+    }
+  },
+    scales: {
+      y: {
+        beginAtZero: true,
+        ticks: {
+          stepSize: 1
+        }
+      }
+    }
+  }
   });
