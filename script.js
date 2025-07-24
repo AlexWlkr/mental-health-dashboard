@@ -30,27 +30,38 @@ function filterPrograms () {
 const matchesName = program.name.toLowerCase().includes(searchTerm);
 
 if (matchesType && matchesAudience && matchesAccess && matchesName) {
-  const wrapper = document.createElement('div');
-  wrapper.classList.add('program-wrapper');
+  const card = document.createElement('div');
+  card.classList.add('program-card');
 
   const thumbnail = document.createElement('img');
   thumbnail.src = program.image;
   thumbnail.alt = `Thumbnail for ${program.name}`;
   thumbnail.classList.add('program-thumb');
 
-  const card = document.createElement('div');
-  card.classList.add('program-card');
-  card.innerHTML = `
-    <h2>${program.name}</h2>
-    <p><strong>Type:</strong> ${program.type}</p>
-    <p><strong>Audience:</strong> ${program.audience}</p>
-    <p><strong>Accessibility:</strong> ${program.accessibility}</p>
-  `;
+  const name = document.createElement('h2');
+name.textContent = program.name;
 
-  wrapper.appendChild(card);
-  wrapper.appendChild(thumbnail);
-  programList.appendChild(wrapper);
-}
+  const type = document.createElement('p');
+  type.innerHTML = `<strong>Type:</strong> ${program.type}`;
+
+  const audience = document.createElement('p');
+  audience.innerHTML = `<strong>Audience:</strong> ${program.audience}`;
+
+  const access = document.createElement('p');
+  access.innerHTML = `<strong>Accessibility:</strong> ${program.accessibility}`;
+
+  const contactBtn = document.createElement('button');
+  contactBtn.classList.add('contact-btn');
+  contactBtn.textContent = 'Contact';
+
+card.appendChild(thumbnail);
+  card.appendChild(name);
+  card.appendChild(type);
+  card.appendChild(audience);
+  card.appendChild(access);
+  card.appendChild(contactBtn);
+
+  programList.appendChild(card);
+  }
 });
 }
-filterPrograms();
