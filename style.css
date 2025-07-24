@@ -108,12 +108,13 @@ h1 {
 .program-card h2 {
   font-size: 1.25rem;
   margin-bottom: 0.75rem;
-  color: #111;
+  color: #240046;
 }
 
 .program-card p {
   margin-bottom: 0.5rem;
   font-size: 0.95rem;
+  color: #240046;
 }
 
 .program-thumb {
