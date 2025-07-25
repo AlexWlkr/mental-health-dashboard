@@ -35,7 +35,7 @@ This is an MVP — the goal was to build a functional foundation. Future improve
 - Search functionality and program bookmarking
 
 ### Live Demo
-[👉 Try the Dashboard on Netlify]([https://your-netlify-site.netlify.app](https://mentalhealthbaltimore.netlify.app/))
+[👉 Try the Dashboard on Netlify: (https://mentalhealthbaltimore.netlify.app/))
 
 ### About Me
 I’m Alex Walker — a social media manager and strategist turned frontend developer with a master’s in clinical social work. For the past four years, I’ve led digital campaigns focused on mental health, suicide prevention, and social impact, helping connect underserved communities to life-changing resources.
