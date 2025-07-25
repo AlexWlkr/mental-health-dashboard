@@ -46,5 +46,8 @@ I’m looking for a junior developer role on a mission-driven team, ideally wher
 
 Let’s build something that matters.
 
+This project was built independently with support from ChatGPT as a learning and debugging tool. Every line of code was reviewed and customized as part of my frontend development practice.
+
+
 —
 Alex Walker
