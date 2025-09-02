@@ -1,5 +1,7 @@
 # Mental Health Dashboard
 
+Note: This project was originally built with HTML/CSS/JavaScript. A React rebuild with component-based architecture and state management is in progress (expected completion: Sept, 2025).
+
 This is project 3 in my frontend development portfolio — a minimum viable product (MVP) for a tool I wish existed: a clean, filterable dashboard that helps people find local mental health programs.
 
 It’s designed for students, families, and community members in Baltimore who are often left out of tech solutions. You can filter by program type, audience, or accessibility needs like Spanish-language services or virtual care. The data is mock for now, but the structure is real and ready to scale.
