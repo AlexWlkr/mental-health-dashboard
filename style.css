@@ -6,12 +6,18 @@
   padding: 0;
 }
 
+
+html, body {
+  overflow-x: hidden;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
   background-color: #f5f6fa;
   color: #222;
   line-height: 1.6;
   padding: 2rem;
+    position: relative
 }
 
 /* PAGE TITLE */
@@ -170,14 +176,3 @@ max-width: 100px;
   outline-offset: 4px;
 }
 
-/* MOBILE RESPONSIVE */
-@media (max-width: 600px) {
-  #filters {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .program-card {
-    max-width: 90%;
-  }
-}
