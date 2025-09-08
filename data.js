@@ -4,8 +4,8 @@ const programs = [
     type: "Peer Support",
     audience: "Adults",
     accessibility: "Hybrid",
-    image: "./assets/nami-adults.jpg", 
-    altText: "Adult mental health service in Baltimore"
+    image: "./assets/nami-adults.jpg",
+    altText: "Adult mental health service in Baltimore",
   },
   {
     name: "NAMI Metro Baltimore – Peer-led Support Groups",
@@ -13,7 +13,7 @@ const programs = [
     audience: "Family",
     accessibility: "Hybrid",
     image: "./assets/nami-family.jpg",
-     altText: "Family mental health service in Baltimore"
+    altText: "Family mental health service in Baltimore",
   },
   {
     name: "NAMI Metro Baltimore – Peer-led Support Groups",
@@ -21,23 +21,23 @@ const programs = [
     audience: "Youth",
     accessibility: "Hybrid",
     image: "./assets/nami-youth.jpg",
-     altText: "Youth mental health service in Baltimore"
+    altText: "Youth mental health service in Baltimore",
   },
   {
     name: "NAMI Metro Baltimore – LGBTQIA+ Resources & Support",
     type: "Peer Support",
     audience: "LGBTQ",
     accessibility: "Hybrid",
-   image: "./assets/nami-peer-lgbtq.jpg",
-    altText: "LGBTQ mental health service in Baltimore"
+    image: "./assets/nami-peer-lgbtq.jpg",
+    altText: "LGBTQ mental health service in Baltimore",
   },
   {
     name: "Baltimore County Health – Mobile Crisis and Urgent Care",
     type: "Hotline",
     audience: "Adults",
     accessibility: "In-Person",
-   image: "./assets/hotline.jpg",
-    altText: "Adult mental health hotline service in Baltimore"
+    image: "./assets/hotline.jpg",
+    altText: "Adult mental health hotline service in Baltimore",
   },
   {
     name: "Baltimore County Health – Mobile Crisis and Urgent Care",
@@ -45,7 +45,7 @@ const programs = [
     audience: "Family",
     accessibility: "In-Person",
     image: "./assets/hotline-2.jpg",
-     altText: "Family mental health hotline service in Baltimore"
+    altText: "Family mental health hotline service in Baltimore",
   },
   {
     name: "Hearts & Ears, Inc. (Y2Connect)",
@@ -53,7 +53,7 @@ const programs = [
     audience: "LGBTQ",
     accessibility: "Hybrid",
     image: "./assets/hearts-and-ears.jpg",
-     altText: "LGBTQ peer support mental health service in Baltimore"
+    altText: "LGBTQ peer support mental health service in Baltimore",
   },
   {
     name: "Free Baltimore",
@@ -61,7 +61,7 @@ const programs = [
     audience: "LGBTQ",
     accessibility: "In-Person",
     image: "./assets/free-baltimore.jpg",
-     altText: "LGBTQ mental health service in Baltimore"
+    altText: "LGBTQ mental health service in Baltimore",
   },
   {
     name: "Mighty Behavioral Health Services",
@@ -69,7 +69,7 @@ const programs = [
     audience: "Adults",
     accessibility: "Virtual",
     image: "./assets/mightyjpg",
-     altText: "Adult virtual therapy in Baltimore"
+    altText: "Adult virtual therapy in Baltimore",
   },
   {
     name: "Talkspace Go via Baltimore County Schools",
@@ -77,7 +77,7 @@ const programs = [
     audience: "Teens",
     accessibility: "Virtual",
     image: "./assets/bcps-talkspacejpg",
-     altText: "Therapy service for teens in Baltimore"
+    altText: "Therapy service for teens in Baltimore",
   },
   {
     name: "Overcare Pyschiatry and Therapy",
@@ -85,7 +85,7 @@ const programs = [
     audience: "Family",
     accessibility: "In-Person",
     image: "./assets/overcare.jpg",
-     altText: "Family in-person therapy in Baltimore"
+    altText: "Family in-person therapy in Baltimore",
   },
   {
     name: "BHSB – ASL-Accessible Services",
@@ -93,7 +93,7 @@ const programs = [
     audience: "Adults",
     accessibility: "ASL Interpretation Offered",
     image: "./assets/asl.jpg",
-    altText: "ASL mental health service in Baltimore"
+    altText: "ASL mental health service in Baltimore",
   },
   {
     name: "NAMI Metro Baltimore – Spanish-Language Peer Support",
@@ -101,14 +101,14 @@ const programs = [
     audience: "Family",
     accessibility: "Services Offered in Spanish",
     image: "./assets/spanish-speaking.jpg",
-    altText: "Spanish Speaking mental health support in Baltimore"
+    altText: "Spanish Speaking mental health support in Baltimore",
   },
-   { 
+  {
     name: "Sarah's House",
     type: "Therapy",
     audience: "Family",
     accessibility: "Hybrid",
     image: "./assets/sarahs-house.jpg",
-    altText: "Sara's House mental health center in Baltimore"
-  }
+    altText: "Sara's House mental health center in Baltimore",
+  },
 ];

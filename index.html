@@ -1,91 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mental Health Dashboard</title>
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="mediaqueries.css">
-</head>
-<body>
-    <h1>Baltimore Mental Health Resource Dashboard </h1>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <h1>Baltimore Mental Health Resource Dashboard</h1>
     <div class="instructions">
-        <p> Use the filters or search bar to explore mental health programs by type, audience, and accessibility.</p>
+      <p>
+        Use the filters or search bar to explore mental health programs by type,
+        audience, and accessibility.
+      </p>
     </div>
- <main id="dashboard">
-  <!-- LEFT PANEL -->
-  <section id="left-panel">
-       <!-- FILTER SECTION -->
-      <div id="filters">
-<label for="type-filter">Program Type:</label>
-<select id="type-filter">
-  <option value="">All</option>
-  <option value="Hotline">Hotline</option>
-  <option value="Peer Support">Peer Support</option>
-  <option value="Therapy">Therapy</option>
-  <option value="Workshop">Workshop</option>
-</select>
+    <main id="dashboard">
+      <!-- LEFT PANEL -->
+      <section id="left-panel">
+        <!-- FILTER SECTION -->
+        <div id="filters">
+          <label for="type-filter">Program Type:</label>
+          <select id="type-filter">
+            <option value="">All</option>
+            <option value="Hotline">Hotline</option>
+            <option value="Peer Support">Peer Support</option>
+            <option value="Therapy">Therapy</option>
+            <option value="Workshop">Workshop</option>
+          </select>
 
-<label for="audience-filter">Audience:</label>
-<select id="audience-filter">
-  <option value="">All</option>
-  <option value="Adults">Adults</option>
-  <option value="BIPOC">BIPOC</option>
-  <option value="College Students">College Students</option>
-  <option value="Family">Family+</option>
-  <option value="LGBTQ">LGBTQ+</option>
-  <option value="Teens">Teens</option>
-  <option value="Youth">Youth</option>
-</select>
+          <label for="audience-filter">Audience:</label>
+          <select id="audience-filter">
+            <option value="">All</option>
+            <option value="Adults">Adults</option>
+            <option value="BIPOC">BIPOC</option>
+            <option value="College Students">College Students</option>
+            <option value="Family">Family+</option>
+            <option value="LGBTQ">LGBTQ+</option>
+            <option value="Teens">Teens</option>
+            <option value="Youth">Youth</option>
+          </select>
 
-<label for="access-filter">Accessibility:</label>
-<select id="access-filter">
-  <option value="">All</option>
-  <option value="ASL Interpretation Offered">ASL Interpretation Offered</option>
-  <option value="Hybrid">Hybrid</option>
-  <option value="In-Person">In-Person</option>
-  <option value="Service Animal Friendly">Service Animal Friendly</option>
-  <option value="Services Offered in Spanish">Services Offered in Spanish</option>
-  <option value="Virtual">Virtual</option>
-  <option value="Wheelchair Accessible Location">Wheelchair Accesible Location</option>
-</select>
-<!-- SEARCH BAR -->
-     <label for="search-bar">Search Programs:</label>     
-<input type="text" id="search-bar" placeholder="Search by name..." />
-  </div>
-  
-   <!-- PROGRAM CARDS -->
-   <div id="program-list">
-  </div>
-   </section>
-   
-   <!-- RIGHT PANEL -->
+          <label for="access-filter">Accessibility:</label>
+          <select id="access-filter">
+            <option value="">All</option>
+            <option value="ASL Interpretation Offered">
+              ASL Interpretation Offered
+            </option>
+            <option value="Hybrid">Hybrid</option>
+            <option value="In-Person">In-Person</option>
+            <option value="Service Animal Friendly">
+              Service Animal Friendly
+            </option>
+            <option value="Services Offered in Spanish">
+              Services Offered in Spanish
+            </option>
+            <option value="Virtual">Virtual</option>
+            <option value="Wheelchair Accessible Location">
+              Wheelchair Accesible Location
+            </option>
+          </select>
+          <!-- SEARCH BAR -->
+          <label for="search-bar">Search Programs:</label>
+          <input type="text" id="search-bar" placeholder="Search by name..." />
+        </div>
 
-     <section id="right-panel">
+        <!-- PROGRAM CARDS -->
+        <div id="program-list"></div>
+      </section>
+
+      <!-- RIGHT PANEL -->
+
+      <section id="right-panel">
         <div class="chart-card">
-    <h2>Programs by Type</h2>
-<canvas id="programTypeChart"></canvas>
-</div>
+          <h2>Programs by Type</h2>
+          <canvas id="programTypeChart"></canvas>
+        </div>
 
-    <div class="chart-card">
-<h2>Programs by Audience</h2>
-<canvas id="audienceChart"></canvas>
-</div>
+        <div class="chart-card">
+          <h2>Programs by Audience</h2>
+          <canvas id="audienceChart"></canvas>
+        </div>
 
-    <div class="chart-card">
-<h2>Programs by Accessibility</h2>
-<canvas id="accessibilityChart"></canvas>
-</div>
+        <div class="chart-card">
+          <h2>Programs by Accessibility</h2>
+          <canvas id="accessibilityChart"></canvas>
+        </div>
+      </section>
+    </main>
 
-  </section>
-   </main>
+    <!-- SCRIPTS -->
 
-          <!-- SCRIPTS -->
-
-  <script src="data.js"></script>
-  <script src="script.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-<script src="chart.js"></script>
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="chart.js"></script>
     <footer>Copyright © 2025</footer>
-</body>
+  </body>
 </html>
